@@ -228,7 +228,7 @@
 
 [[projects]]
   digest = "1:2bac1ab777481a7ef169837f0eeac25a1a6628ac93aef853168681dfec4a653c"
-  name = "github.com/golang/protobuf"
+  name = "google.golang.org/protobuf"
   packages = [
     "proto",
     "protoc-gen-go/descriptor",
