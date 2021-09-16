@@ -104,7 +104,7 @@ func makeRestoreInitContainers(backupURL *url.URL, token, repo, version string, 
 	return []v1.Container{
 		{
 			Name:  "fetch-backup",
-			Image: "ellerbrock/alpine-bash-curl-ssl",
+			Image: "curlimages/curl",
 			Command: []string{
 				"/bin/bash", "-ec",
 				fmt.Sprintf(`
@@ -122,7 +122,7 @@ fi
 			Name:  "restore-datadir",
 			Image: ImageName(repo, version),
 			Command: []string{
-				"/bin/bash", "-ec",
+				"/bin/sh", "-ec",
 				fmt.Sprintf("ETCDCTL_API=3 etcdctl snapshot restore %[1]s"+
 					" --name %[2]s"+
 					" --initial-cluster %[2]s=%[3]s"+
