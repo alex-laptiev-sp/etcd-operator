@@ -8,6 +8,3 @@ ADD _output/bin/etcd-operator /usr/local/bin/etcd-operator
 
 RUN adduser -D etcd-operator
 USER etcd-operator
-
-CMD /usr/local/bin/etcd-restore-operator
-
