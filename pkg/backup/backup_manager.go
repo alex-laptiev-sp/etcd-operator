@@ -21,10 +21,10 @@ import (
 	"sort"
 	"time"
 
-	"github.com/coreos/etcd-operator/pkg/backup/writer"
-	"github.com/coreos/etcd-operator/pkg/util/constants"
+	"github.com/alex-laptiev-sp/etcd-operator/pkg/backup/writer"
+	"github.com/alex-laptiev-sp/etcd-operator/pkg/util/constants"
 
-	"github.com/coreos/etcd/clientv3"
+	"github.com/alex-laptiev-sp/etcd/clientv3"
 	"github.com/sirupsen/logrus"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/kubernetes"

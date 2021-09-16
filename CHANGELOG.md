@@ -2,7 +2,7 @@
 
 ### Added
 
-- Added `spec.Pod.ClusterDomain` to explicitly set the cluster domain used for the etcd member URLs. [#2082](https://github.com/coreos/etcd-operator/pull/2082)
+- Added `spec.Pod.ClusterDomain` to explicitly set the cluster domain used for the etcd member URLs. [#2082](https://github.com/alex-laptiev-sp/etcd-operator/pull/2082)
 
 ### Changed
 
@@ -10,8 +10,8 @@
 
 ### Fixed
 
-- Don't expose unready nodes via client service. [#2063](https://github.com/coreos/etcd-operator/pull/2063)
-- Azure blob storage: use correct list prefix [#2071](https://github.com/coreos/etcd-operator/pull/2071)
+- Don't expose unready nodes via client service. [#2063](https://github.com/alex-laptiev-sp/etcd-operator/pull/2063)
+- Azure blob storage: use correct list prefix [#2071](https://github.com/alex-laptiev-sp/etcd-operator/pull/2071)
 
 ### Deprecated
 
@@ -21,8 +21,8 @@
 
 ### Added
 
-- Added `spec.BackupSource.S3.ForcePathStyle` to `EtcdBackup` to force path style s3 uploads. [#2036](https://github.com/coreos/etcd-operator/pull/2036)
-- Added `spec.RestoreSource.S3.ForcePathStyle` to `EtcdRestore` to force path style s3 downloads. [#2036](https://github.com/coreos/etcd-operator/pull/2036)
+- Added `spec.BackupSource.S3.ForcePathStyle` to `EtcdBackup` to force path style s3 uploads. [#2036](https://github.com/alex-laptiev-sp/etcd-operator/pull/2036)
+- Added `spec.RestoreSource.S3.ForcePathStyle` to `EtcdRestore` to force path style s3 downloads. [#2036](https://github.com/alex-laptiev-sp/etcd-operator/pull/2036)
 
 ### Changed
 
@@ -37,8 +37,8 @@
 
 ### Fixed
 
-- Fixed a bug where `same CR names` in different namespaces with cluster-wide operator were not working as expected [#2026](https://github.com/coreos/etcd-operator/pull/2026)
-- Fixed a bug where cluster names could exceed 63 octets the maximum defined by [RFC 1035 section 2.3.4](https://tools.ietf.org/html/rfc1035) resulting in hanging pods [2027](https://github.com/coreos/etcd-operator/pull/2027).
+- Fixed a bug where `same CR names` in different namespaces with cluster-wide operator were not working as expected [#2026](https://github.com/alex-laptiev-sp/etcd-operator/pull/2026)
+- Fixed a bug where cluster names could exceed 63 octets the maximum defined by [RFC 1035 section 2.3.4](https://tools.ietf.org/html/rfc1035) resulting in hanging pods [2027](https://github.com/alex-laptiev-sp/etcd-operator/pull/2027).
 
 ## [Release 0.9.3]
 
@@ -55,13 +55,13 @@
 
 ### Fixed
 
-- Fixed leaking http connections while verifying backup snapshots. [#1976](https://github.com/coreos/etcd-operator/pull/1976)
+- Fixed leaking http connections while verifying backup snapshots. [#1976](https://github.com/alex-laptiev-sp/etcd-operator/pull/1976)
 
 ## [Release 0.9.2]
 
 ### Added
 
-- Added the field `spec.pod.securityContext` to `EtcdCluster` that allows setting a specific [PodSecurityContext](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/#set-the-security-context-for-a-pod) for the etcd pods. [#1949](https://github.com/coreos/etcd-operator/pull/1949)
+- Added the field `spec.pod.securityContext` to `EtcdCluster` that allows setting a specific [PodSecurityContext](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/#set-the-security-context-for-a-pod) for the etcd pods. [#1949](https://github.com/alex-laptiev-sp/etcd-operator/pull/1949)
 
 ### Changed
 
@@ -74,13 +74,13 @@
 
 ### Added
 
-- Added optional flag `--cluster-wide` to etcd-operator to allow it to manage etcd clusters across all namespaces. [#1777](https://github.com/coreos/etcd-operator/pull/1777)
-- Added support for annotation `etcd.database.coreos.com/scope: clusterwide` in `EtcdCluster` to allow it to be managed by a cluster wide operator. [#1777](https://github.com/coreos/etcd-operator/pull/1777)
-- Added the field `spec.pod.busyboxImage` to the `PodPolicy` of the `EtcdCluster` to allow overriding the default busybox image used for the etcd pod's init container. [#1928](https://github.com/coreos/etcd-operator/pull/1928)
+- Added optional flag `--cluster-wide` to etcd-operator to allow it to manage etcd clusters across all namespaces. [#1777](https://github.com/alex-laptiev-sp/etcd-operator/pull/1777)
+- Added support for annotation `etcd.database.coreos.com/scope: clusterwide` in `EtcdCluster` to allow it to be managed by a cluster wide operator. [#1777](https://github.com/alex-laptiev-sp/etcd-operator/pull/1777)
+- Added the field `spec.pod.busyboxImage` to the `PodPolicy` of the `EtcdCluster` to allow overriding the default busybox image used for the etcd pod's init container. [#1928](https://github.com/alex-laptiev-sp/etcd-operator/pull/1928)
 
 ### Fixed
 
-- Fixed a bug where the informer watch stream would timeout after 30s of not receiving an event. [#1936](https://github.com/coreos/etcd-operator/pull/1936)
+- Fixed a bug where the informer watch stream would timeout after 30s of not receiving an event. [#1936](https://github.com/alex-laptiev-sp/etcd-operator/pull/1936)
 
 ## [Release 0.9.0]
 
@@ -107,7 +107,7 @@ Same as v0.8.4. The version is bumping to 0.9.0 due to adding a new ABS backup A
 
 ### Added
 
-- Added the option to use PersistentVolume as non-stable storage for etcd pods. This feature is still alpha and subject to change in future releases [#1861](https://github.com/coreos/etcd-operator/pull/1861)
+- Added the option to use PersistentVolume as non-stable storage for etcd pods. This feature is still alpha and subject to change in future releases [#1861](https://github.com/alex-laptiev-sp/etcd-operator/pull/1861)
 
 ### Changed
 
@@ -129,7 +129,7 @@ Same as v0.8.4. The version is bumping to 0.9.0 due to adding a new ABS backup A
 
 ### Fixed
 
-- Fixed a bug where the restore operator would fail to restore the seed member because recreating an etcd pod with the same name as a recently deleted one would conflict as the older pod and its resources, like the DNS name, might still not be deleted. [#1825](https://github.com/coreos/etcd-operator/issues/1825)
+- Fixed a bug where the restore operator would fail to restore the seed member because recreating an etcd pod with the same name as a recently deleted one would conflict as the older pod and its resources, like the DNS name, might still not be deleted. [#1825](https://github.com/alex-laptiev-sp/etcd-operator/issues/1825)
 
 
 ## [Release 0.8.2]
@@ -231,7 +231,7 @@ We'd better use quay.io and keep it compatible to work for 3.1 versions of etcd.
 ## [Release 0.7.0]
 
 Existing backup and restore features in EtcdCluster API won’t be supported after 0.7.0 release.
-See [Decoupling Backup and Restore Logic from Etcd Operator](https://github.com/coreos/etcd-operator/issues/1626) for more detail.
+See [Decoupling Backup and Restore Logic from Etcd Operator](https://github.com/alex-laptiev-sp/etcd-operator/issues/1626) for more detail.
 
 If applicable then see the [upgrade guide](./doc/user/upgrade/upgrade_guide.md) on how to upgrade from `v0.6.1` to `v0.7.0` .
 
@@ -334,7 +334,7 @@ Finally, it is safe to upgrade operator. It's highly recommended to save a backu
 
 ### Changed
 
-- With k8s 1.7 and onwards TPRs have been deprecated and are replaced with CRD. See the k8s 1.7 [blogpost](http://blog.kubernetes.io/2017/06/kubernetes-1.7-security-hardening-stateful-application-extensibility-updates.html) or [release notes](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG.md#major-themes) for more details. For this release a live migration of the cluster spec from TPR to CRD is not supported. To preserve the cluster state during the upgrade you will need to create a backup of the cluster and recreate the cluster from the backup after upgrading the operator. See the [upgrade guide](https://github.com/coreos/etcd-operator/blob/master/doc/user/upgrade/upgrade_guide.md) for more detailed steps on how to do that.
+- With k8s 1.7 and onwards TPRs have been deprecated and are replaced with CRD. See the k8s 1.7 [blogpost](http://blog.kubernetes.io/2017/06/kubernetes-1.7-security-hardening-stateful-application-extensibility-updates.html) or [release notes](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG.md#major-themes) for more details. For this release a live migration of the cluster spec from TPR to CRD is not supported. To preserve the cluster state during the upgrade you will need to create a backup of the cluster and recreate the cluster from the backup after upgrading the operator. See the [upgrade guide](https://github.com/alex-laptiev-sp/etcd-operator/blob/master/doc/user/upgrade/upgrade_guide.md) for more detailed steps on how to do that.
 
 - Changes in the cluster object's type metadata:
   - The `apiVersion` field has been changed from `etcd.coreos.com/v1beta1` to `etcd.database.coreos.com/v1beta2`
@@ -345,7 +345,7 @@ Finally, it is safe to upgrade operator. It's highly recommended to save a backu
 
 ### Added
 
-- [GH-1232](https://github.com/coreos/etcd-operator/pull/1232) the operator can now log critical actions like pod creation/deletion to a user specified path via the optional flag `debug-logfile-path`. The logs will only be generated if the cluster is self hosted and the flag is set. This can be used in conjunction with a persistent volume to persist the critical actions to disk for later inspection.
+- [GH-1232](https://github.com/alex-laptiev-sp/etcd-operator/pull/1232) the operator can now log critical actions like pod creation/deletion to a user specified path via the optional flag `debug-logfile-path`. The logs will only be generated if the cluster is self hosted and the flag is set. This can be used in conjunction with a persistent volume to persist the critical actions to disk for later inspection.
 
 ### Changed
 
@@ -445,7 +445,7 @@ Existing self hosted etcd cluster MUST be recreated for updating to this release
 - Self-hosted etcd: if `etcd-hosts.checkpoint` file exists under `${datadir}/`,
   etcd pod will restore the hosts mapping from it before etcd bootstraps.
 - Add static TLS support for self-hosted etcd mode.
-- The operator will now post Kubernetes [events](https://kubernetes.io/docs/resources-reference/v1.6/#event-v1-core). To allow this the necessary RBAC rule for the resource `events` must be added to the clusterrole. See the [rbac guide](https://github.com/coreos/etcd-operator/blob/master/doc/user/rbac.md#create-clusterrole) to see how to set up RBAC rules for the operator. If the rbac rule for 'events' is not present then the operator will continue to function normally but will also print out an error message on the failure to post an event.
+- The operator will now post Kubernetes [events](https://kubernetes.io/docs/resources-reference/v1.6/#event-v1-core). To allow this the necessary RBAC rule for the resource `events` must be added to the clusterrole. See the [rbac guide](https://github.com/alex-laptiev-sp/etcd-operator/blob/master/doc/user/rbac.md#create-clusterrole) to see how to set up RBAC rules for the operator. If the rbac rule for 'events' is not present then the operator will continue to function normally but will also print out an error message on the failure to post an event.
 - Add revision field in backup status.
 - Support getting a specific backup with version and revision from the backup service.
 
@@ -471,7 +471,7 @@ Existing self hosted etcd cluster MUST be recreated for updating to this release
 
 ### Upgrade Notice
 
-Check https://github.com/coreos/etcd-operator/blob/master/doc/user/upgrade/upgrade_guide.md#v02x-to-v03x
+Check https://github.com/alex-laptiev-sp/etcd-operator/blob/master/doc/user/upgrade/upgrade_guide.md#v02x-to-v03x
 
 ### Added
 
@@ -508,7 +508,7 @@ Check https://github.com/coreos/etcd-operator/blob/master/doc/user/upgrade/upgra
 - PodPolicy provides `EtcdEnv` option to add custom env to the etcd process.
 - PodPolicy provides `Labels` option to add custom labels to the etcd pod.
 - TLS feature: user can now create TLS-secured cluster via operator.
-  See [TLS guide](https://github.com/coreos/etcd-operator/blob/master/doc/user/cluster_tls.md).
+  See [TLS guide](https://github.com/alex-laptiev-sp/etcd-operator/blob/master/doc/user/cluster_tls.md).
 
 ### Changed
 
@@ -521,7 +521,7 @@ Check https://github.com/coreos/etcd-operator/blob/master/doc/user/upgrade/upgra
 
 ### Fixed
 
-- Fixed an issue where liveness probes failed when authentication was enabled. [#1957](https://github.com/coreos/etcd-operator/issues/1957)
+- Fixed an issue where liveness probes failed when authentication was enabled. [#1957](https://github.com/alex-laptiev-sp/etcd-operator/issues/1957)
 
 ### Deprecated
 

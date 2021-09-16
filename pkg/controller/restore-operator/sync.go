@@ -17,11 +17,11 @@ package controller
 import (
 	"fmt"
 
+	api "github.com/alex-laptiev-sp/etcd-operator/pkg/apis/etcd/v1beta2"
+	"github.com/alex-laptiev-sp/etcd-operator/pkg/backup/backupapi"
+	"github.com/alex-laptiev-sp/etcd-operator/pkg/util/etcdutil"
 	"github.com/alex-laptiev-sp/etcd-operator/pkg/util/k8sutil"
-	api "github.com/coreos/etcd-operator/pkg/apis/etcd/v1beta2"
-	"github.com/coreos/etcd-operator/pkg/backup/backupapi"
-	"github.com/coreos/etcd-operator/pkg/util/etcdutil"
-	"github.com/coreos/etcd-operator/pkg/util/retryutil"
+	"github.com/alex-laptiev-sp/etcd-operator/pkg/util/retryutil"
 
 	apierrors "k8s.io/apimachinery/pkg/api/errors"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

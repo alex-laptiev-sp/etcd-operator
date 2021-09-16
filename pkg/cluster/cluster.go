@@ -23,11 +23,11 @@ import (
 	"strings"
 	"time"
 
+	api "github.com/alex-laptiev-sp/etcd-operator/pkg/apis/etcd/v1beta2"
+	"github.com/alex-laptiev-sp/etcd-operator/pkg/generated/clientset/versioned"
+	"github.com/alex-laptiev-sp/etcd-operator/pkg/util/etcdutil"
 	"github.com/alex-laptiev-sp/etcd-operator/pkg/util/k8sutil"
-	api "github.com/coreos/etcd-operator/pkg/apis/etcd/v1beta2"
-	"github.com/coreos/etcd-operator/pkg/generated/clientset/versioned"
-	"github.com/coreos/etcd-operator/pkg/util/etcdutil"
-	"github.com/coreos/etcd-operator/pkg/util/retryutil"
+	"github.com/alex-laptiev-sp/etcd-operator/pkg/util/retryutil"
 
 	"github.com/pborman/uuid"
 	"github.com/sirupsen/logrus"
@@ -406,7 +406,7 @@ func (c *Cluster) pollPods() (running, pending []*v1.Pod, err error) {
 	for i := range podList.Items {
 		pod := &podList.Items[i]
 		// Avoid polling deleted pods. k8s issue where deleted pods would sometimes show the status Pending
-		// See https://github.com/coreos/etcd-operator/issues/1693
+		// See https://github.com/alex-laptiev-sp/etcd-operator/issues/1693
 		if pod.DeletionTimestamp != nil {
 			continue
 		}

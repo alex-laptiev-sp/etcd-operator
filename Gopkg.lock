@@ -110,7 +110,7 @@
 
 [[projects]]
   digest = "1:3e8acd4d7be0f774f424c9f7510597cf711c3782dae2d6a9b94a0d6a856c5648"
-  name = "github.com/coreos/etcd"
+  name = "github.com/alex-laptiev-sp/etcd"
   packages = [
     "auth/authpb",
     "clientv3",
@@ -987,10 +987,10 @@
     "github.com/aws/aws-sdk-go/aws/session",
     "github.com/aws/aws-sdk-go/service/s3",
     "github.com/aws/aws-sdk-go/service/s3/s3manager",
-    "github.com/coreos/etcd/clientv3",
-    "github.com/coreos/etcd/etcdserver/api/v3rpc/rpctypes",
-    "github.com/coreos/etcd/etcdserver/etcdserverpb",
-    "github.com/coreos/etcd/pkg/transport",
+    "github.com/alex-laptiev-sp/etcd/clientv3",
+    "github.com/alex-laptiev-sp/etcd/etcdserver/api/v3rpc/rpctypes",
+    "github.com/alex-laptiev-sp/etcd/etcdserver/etcdserverpb",
+    "github.com/alex-laptiev-sp/etcd/pkg/transport",
     "github.com/pborman/uuid",
     "github.com/pkg/errors",
     "github.com/prometheus/client_golang/prometheus",

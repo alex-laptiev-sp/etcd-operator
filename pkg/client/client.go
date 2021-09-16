@@ -15,8 +15,8 @@
 package client
 
 import (
+	"github.com/alex-laptiev-sp/etcd-operator/pkg/generated/clientset/versioned"
 	"github.com/alex-laptiev-sp/etcd-operator/pkg/util/k8sutil"
-	"github.com/coreos/etcd-operator/pkg/generated/clientset/versioned"
 
 	"k8s.io/client-go/rest"
 )

@@ -31,7 +31,7 @@ required = [
   version = "kubernetes-1.12.6"
 
 [[constraint]]
-  name = "github.com/coreos/etcd"
+  name = "github.com/alex-laptiev-sp/etcd"
   version = "=3.2.13"
 
 [[override]]

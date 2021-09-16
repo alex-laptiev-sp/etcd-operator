@@ -43,7 +43,7 @@ Thanks for your contributions!
 ### Coding Style
 
 CoreOS projects written in Go follow a set of style guidelines that we've documented 
-[here](https://github.com/coreos/docs/tree/master/golang). Please follow them when 
+[here](https://github.com/alex-laptiev-sp/docs/tree/master/golang). Please follow them when 
 working on your contributions.
 
 ### Format of the Commit Message

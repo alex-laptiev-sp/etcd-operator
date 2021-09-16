@@ -1,4 +1,4 @@
-module github.com/coreos/etcd-operator
+module operator
 
 go 1.17
 
@@ -8,11 +8,9 @@ require (
 	github.com/Azure/go-autorest v11.1.1+incompatible
 	github.com/PuerkitoBio/purell v1.1.1
 	github.com/PuerkitoBio/urlesc v0.0.0-20170810143723-de5bf2ad4578
-	github.com/alex-laptiev-sp/etcd-operator v0.0.0-20210916192252-1883f50e8b39
 	github.com/aliyun/aliyun-oss-go-sdk v0.0.0-20190125095113-2b29687e15f2
 	github.com/aws/aws-sdk-go v1.13.8
 	github.com/beorn7/perks v0.0.0-20180321164747-3a771d992973
-	github.com/coreos/etcd v3.2.13+incompatible
 	github.com/davecgh/go-spew v1.1.1
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible
 	github.com/emicklei/go-restful v2.9.0+incompatible
@@ -70,15 +68,4 @@ require (
 	k8s.io/gengo v0.0.0-20190128074634-0689ccc1d7d6
 	k8s.io/klog v0.2.0
 	k8s.io/kube-openapi v0.0.0-20190225204428-d50a959ae76a
-)
-
-require (
-	github.com/BurntSushi/toml v0.3.1 // indirect
-	github.com/golang/protobuf v1.3.1 // indirect
-	github.com/googleapis/gax-go v1.0.3 // indirect
-	github.com/googleapis/gax-go/v2 v2.0.2 // indirect
-	github.com/konsorten/go-windows-terminal-sequences v1.0.1 // indirect
-	golang.org/x/exp v0.0.0-20190221220918-438050ddec5e // indirect
-	golang.org/x/lint v0.0.0-20190227174305-5b3e6a55c961 // indirect
-	honnef.co/go/tools v0.0.0-20190102054323-c2f93a96b099 // indirect
 )

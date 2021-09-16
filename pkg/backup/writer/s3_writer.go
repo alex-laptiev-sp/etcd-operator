@@ -19,7 +19,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/coreos/etcd-operator/pkg/backup/util"
+	"github.com/alex-laptiev-sp/etcd-operator/pkg/backup/util"
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/s3"
