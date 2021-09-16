@@ -16,6 +16,8 @@ github.com/alecthomas/template v0.0.0-20160405071501-a0175ee3bccc/go.mod h1:LOuy
 github.com/alecthomas/units v0.0.0-20151022065526-2efee857e7cf/go.mod h1:ybxpYRFXyAe+OPACYpWeL0wqObRcbAqCMya13uyzqw0=
 github.com/alex-laptiev-sp/etcd-operator v0.0.0-20210916182100-5ff0af9d3978 h1:ZbjAxL8gaOHywXGdOLBJeWke/bWoPBnDJvPHELs0PqM=
 github.com/alex-laptiev-sp/etcd-operator v0.0.0-20210916182100-5ff0af9d3978/go.mod h1:aG1TIyRjILKb2m1RGEyQofdTBPcYhiQqEDM/oQf/I9o=
+github.com/alex-laptiev-sp/etcd-operator v0.0.0-20210916192252-1883f50e8b39 h1:Nr6ioKia8Qfx/FeHI2Lo/0r9a8nk7tt37QAV7cVF+00=
+github.com/alex-laptiev-sp/etcd-operator v0.0.0-20210916192252-1883f50e8b39/go.mod h1:aG1TIyRjILKb2m1RGEyQofdTBPcYhiQqEDM/oQf/I9o=
 github.com/aliyun/aliyun-oss-go-sdk v0.0.0-20190125095113-2b29687e15f2 h1:7oDAZnIvzxoPhyBFLgiBXEqOpNnqS9CJVeazaQpEzmA=
 github.com/aliyun/aliyun-oss-go-sdk v0.0.0-20190125095113-2b29687e15f2/go.mod h1:T/Aws4fEfogEE9v+HPhhw+CntffsBHJ8nXQCwKr0/g8=
 github.com/aws/aws-sdk-go v1.13.8 h1:2GXJr7VVErT37gjlGzkRI7Pb0alhJ2Y3XoCRcXRhavQ=

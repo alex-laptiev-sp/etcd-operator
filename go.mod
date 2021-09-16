@@ -8,6 +8,7 @@ require (
 	github.com/Azure/go-autorest v11.1.1+incompatible
 	github.com/PuerkitoBio/purell v1.1.1
 	github.com/PuerkitoBio/urlesc v0.0.0-20170810143723-de5bf2ad4578
+	github.com/alex-laptiev-sp/etcd-operator v0.0.0-20210916192252-1883f50e8b39
 	github.com/aliyun/aliyun-oss-go-sdk v0.0.0-20190125095113-2b29687e15f2
 	github.com/aws/aws-sdk-go v1.13.8
 	github.com/beorn7/perks v0.0.0-20180321164747-3a771d992973
@@ -73,7 +74,6 @@ require (
 
 require (
 	github.com/BurntSushi/toml v0.3.1 // indirect
-	github.com/alex-laptiev-sp/etcd-operator v0.0.0-20210916182100-5ff0af9d3978 // indirect
 	github.com/golang/protobuf v1.3.1 // indirect
 	github.com/googleapis/gax-go v1.0.3 // indirect
 	github.com/googleapis/gax-go/v2 v2.0.2 // indirect
