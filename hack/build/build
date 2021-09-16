@@ -17,7 +17,7 @@ docker run --rm \
 	/bin/bash -c "go mod init && \
 	    go get github.com/coreos/etcd-operator/pkg/cluster && \
 		go get github.com/coreos/etcd-operator/pkg/util/etcdutil && \
-		go get github.com/coreos/etcd-operator/pkg/util/k8sutil && \
+		go get github.com/alex-laptiev-sp/etcd-operator/pkg/util/k8sutil && \
 		go get github.com/coreos/etcd-operator/cmd/operator && \
 		go get github.com/alex-laptiev-sp/etcd-operator/pkg/util/k8sutil && \
 		go get github.com/coreos/etcd-operator/pkg/apis/etcd/v1beta2 && \

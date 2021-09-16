@@ -22,11 +22,11 @@ import (
 	"testing"
 	"time"
 
+	"github.com/alex-laptiev-sp/etcd-operator/pkg/util/k8sutil"
 	api "github.com/coreos/etcd-operator/pkg/apis/etcd/v1beta2"
 	"github.com/coreos/etcd-operator/pkg/backup/writer"
 	"github.com/coreos/etcd-operator/pkg/generated/clientset/versioned"
 	"github.com/coreos/etcd-operator/pkg/util"
-	"github.com/coreos/etcd-operator/pkg/util/k8sutil"
 	"github.com/coreos/etcd-operator/pkg/util/retryutil"
 
 	"k8s.io/api/core/v1"

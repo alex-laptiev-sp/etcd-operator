@@ -22,9 +22,9 @@ import (
 	"runtime"
 	"time"
 
+	"github.com/alex-laptiev-sp/etcd-operator/pkg/util/k8sutil"
 	controller "github.com/coreos/etcd-operator/pkg/controller/restore-operator"
 	"github.com/coreos/etcd-operator/pkg/util/constants"
-	"github.com/coreos/etcd-operator/pkg/util/k8sutil"
 	version "github.com/coreos/etcd-operator/version"
 
 	"github.com/sirupsen/logrus"
