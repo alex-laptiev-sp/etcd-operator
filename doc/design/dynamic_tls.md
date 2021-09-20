@@ -104,7 +104,7 @@ Cons:
 
 - [Support using Kubernetes CA for certificates](https://github.com/alex-laptiev-sp/etcd-operator/issues/1465)
 - [Allow members to advertise using IPs ](https://github.com/alex-laptiev-sp/etcd-operator/issues/1617)
-- [etcd: Require a specific cert CN from peer client certificate](https://github.com/alex-laptiev-sp/etcd/issues/8262)
+- [etcd: Require a specific cert CN from peer client certificate](https://github.com/coreos/etcd/issues/8262)
 - [bootkube: auto-approval for kubelet](https://github.com/kubernetes-incubator/bootkube/pull/663)
 
 

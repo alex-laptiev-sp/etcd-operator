@@ -19,7 +19,7 @@ import (
 	"testing"
 
 	"github.com/alex-laptiev-sp/etcd-operator/pkg/util/constants"
-	"github.com/alex-laptiev-sp/etcd/clientv3"
+	"github.com/coreos/etcd/clientv3"
 )
 
 const (

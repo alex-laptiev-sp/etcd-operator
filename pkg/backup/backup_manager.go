@@ -24,7 +24,7 @@ import (
 	"github.com/alex-laptiev-sp/etcd-operator/pkg/backup/writer"
 	"github.com/alex-laptiev-sp/etcd-operator/pkg/util/constants"
 
-	"github.com/alex-laptiev-sp/etcd/clientv3"
+	"github.com/coreos/etcd/clientv3"
 	"github.com/sirupsen/logrus"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/kubernetes"

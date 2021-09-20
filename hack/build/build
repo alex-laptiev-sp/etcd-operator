@@ -13,11 +13,11 @@ DOCKER_REPO_ROOT="/go/src/github.com/alex-laptiev-sp/etcd-operator"
 docker run --rm \
 	-v "$PWD":"$DOCKER_REPO_ROOT" \
 	-w "$DOCKER_REPO_ROOT" \
-	golang \
-	/bin/bash -c "go mod init operator && \
+	golang:latest \
+	/bin/bash -c "go mod init github.com/alex-laptiev-sp/etcd-operator && \
 	    go get github.com/alex-laptiev-sp/etcd-operator/pkg/cluster && \
 		go get github.com/alex-laptiev-sp/etcd-operator/pkg/util/etcdutil && \
-		go get github.com/alex-laptiev-sp/etcd-operator/pkg/util/k8sutil@main && \
+		go get github.com/alex-laptiev-sp/etcd-operator/pkg/util/k8sutil && \
 		go get github.com/alex-laptiev-sp/etcd-operator/cmd/operator && \
 		go get github.com/alex-laptiev-sp/etcd-operator/pkg/util/k8sutil && \
 		go get github.com/alex-laptiev-sp/etcd-operator/pkg/apis/etcd/v1beta2 && \

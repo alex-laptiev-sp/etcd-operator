@@ -24,8 +24,8 @@ import (
 	"github.com/alex-laptiev-sp/etcd-operator/pkg/util/etcdutil"
 	"github.com/alex-laptiev-sp/etcd-operator/pkg/util/k8sutil"
 
-	"github.com/alex-laptiev-sp/etcd/clientv3"
-	"github.com/alex-laptiev-sp/etcd/etcdserver/api/v3rpc/rpctypes"
+	"github.com/coreos/etcd/clientv3"
+	"github.com/coreos/etcd/etcdserver/api/v3rpc/rpctypes"
 	"k8s.io/api/core/v1"
 )
 

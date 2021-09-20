@@ -19,7 +19,7 @@ import (
 
 	"github.com/alex-laptiev-sp/etcd-operator/pkg/util/etcdutil"
 	"github.com/alex-laptiev-sp/etcd-operator/pkg/util/k8sutil"
-	"github.com/alex-laptiev-sp/etcd/etcdserver/etcdserverpb"
+	"github.com/coreos/etcd/etcdserver/etcdserverpb"
 	"github.com/pkg/errors"
 
 	"k8s.io/api/core/v1"
